@@ -19,25 +19,18 @@
 <!-- 2. Typing SVG headline (DenverCoder1/readme-typing-svg)                 -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<p align="center">
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
 <img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=400&lines=My+TechStack" alt="My TechStack" />
 </a>
-</p>
-
-<br/>
-
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 3. Tech-stack icons (qkrdmstlr3/techstack-generator)                    -->
 <!--    Order: Python → C++ → Java → docker → github                        -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
-<p align="center">
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
-</p>
+<img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
+<img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" />
+<img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" />
+<img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
+<img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
 
 <br/>
 
