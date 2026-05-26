@@ -6,12 +6,11 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 1. Terminal-style GitHub Stats (yogeshwaran01/github-stats-terminal-style) -->
 <!--    Generated daily by GitHub Actions in this repo                       -->
-<!--    Octocat color inverted: green background + black cat                 -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <p align="center">
   <!-- 옵션 1: fork 저장소의 raw URL 직접 참조 -->
-  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/github_stats.svg" alt="..." />
+  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/terminals/user_profile.svg" alt="..." />
 </p>
 
 <br/>
@@ -20,11 +19,9 @@
 <!-- 2. Typing SVG headline (DenverCoder1/readme-typing-svg)                 -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<h2 align="center">
-  <a href="https://github.com/DenverCoder1/readme-typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=2EA043&center=true&vCenter=true&width=600&lines=My+TechStack" alt="My TechStack" />
-  </a>
-</h2>
+<a href="https://github.com/DenverCoder1/readme-typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=2EA043&center=true&vCenter=true&width=500&lines=My+TechStack" alt="My TechStack" />
+</a>
 
 <br/>
 
@@ -34,11 +31,11 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <p align="center">
-  <img src="https://github.com/qkrdmstlr3/techstack-generator/blob/main/icons/python.svg?raw=true"  alt="Python"  width="65" height="65" />
-  <img src="https://github.com/qkrdmstlr3/techstack-generator/blob/main/icons/cpp.svg?raw=true"     alt="C++"     width="65" height="65" />
-  <img src="https://github.com/qkrdmstlr3/techstack-generator/blob/main/icons/java.svg?raw=true"    alt="Java"    width="65" height="65" />
-  <img src="https://github.com/qkrdmstlr3/techstack-generator/blob/main/icons/docker.svg?raw=true"  alt="Docker"  width="65" height="65" />
-  <img src="https://github.com/qkrdmstlr3/techstack-generator/blob/main/icons/github.svg?raw=true"  alt="GitHub"  width="65" height="65" />
+  <img src="https://techstack-generator/blob/main/icons/python.svg?raw=true"  alt="Python"  width="65" height="65" />
+  <img src="https://techstack-generator/blob/main/icons/cpp.svg?raw=true"     alt="C++"     width="65" height="65" />
+  <img src="https://techstack-generator/blob/main/icons/java.svg?raw=true"    alt="Java"    width="65" height="65" />
+  <img src="https://techstack-generator/blob/main/icons/docker.svg?raw=true"  alt="Docker"  width="65" height="65" />
+  <img src="https://techstack-generator/blob/main/icons/github.svg?raw=true"  alt="GitHub"  width="65" height="65" />
 </p>
 
 <br/>
@@ -77,7 +74,7 @@ No Activity Tracked This Week
 <!--    Generated daily by metrics.yml workflow                              -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<p align="center">
+<p align="Left">
   <img src="./metrics.plugin.starlists.svg" alt="My Starred Lists" />
 </p>
 
