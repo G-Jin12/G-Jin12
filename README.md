@@ -10,7 +10,7 @@
 
 <p align="center">
   <!-- 옵션 1: fork 저장소의 raw URL 직접 참조 -->
-  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/terminals/user_profile.svg" alt="..." />
+  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/terminals/user_profile.svg" alt="..." height="600" />
 </p>
 
 <br/>
