@@ -20,7 +20,7 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=400&lines=My+TechStack" alt="My TechStack" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=400&lines=%F0%9F%92%BB+My+TechStack" alt="My TechStack" />
 </a>
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 3. Tech-stack icons (qkrdmstlr3/techstack-generator)                    -->
@@ -43,7 +43,7 @@
 
 <!--START_SECTION:waka-->
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=My+Activity" alt="My Activity" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=%F0%9F%8E%AC+My+Activity" alt="My Activity" />
 </a>
 
 **I'm a Night 🦉** 
@@ -71,7 +71,7 @@ No Activity Tracked This Week
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=My+Stars" alt="My Stars" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=%F0%9F%92%AB+My+Stars" alt="My Stars" />
 </a>
 
 <p align="Left">
@@ -82,7 +82,7 @@ No Activity Tracked This Week
 <!-- 7. Snake game from contribution grid (Platane/snk)                     -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=Contributions" alt="Contributions" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=C%F0%9F%8E%AE+ontributions" alt="Contributions" />
 </a>
 <picture>
   <source media="(prefers-color-scheme: dark)"
