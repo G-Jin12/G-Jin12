@@ -23,6 +23,7 @@
 <img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=20&duration=3000&pause=1000&color=#FFFFFF&width=500&lines=My+TechStack" alt="My TechStack" />
 </a>
 
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=19&pause=1000&width=435&lines=The+five+boxing+wizards+jump+quickly" alt="Typing SVG" /></a>
 <br/>
 
 <!-- ─────────────────────────────────────────────────────────────────────── -->
