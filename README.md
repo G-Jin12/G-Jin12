@@ -42,18 +42,15 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <!--START_SECTION:waka-->
-<a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=%F0%9F%8E%AC+My+Activity" alt="My Activity" />
-</a>
-
 **I'm a Night 🦉** 
 
 ```text
 🌞 Morning                0 commits           ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-🌆 Daytime                4 commits           ███░░░░░░░░░░░░░░░░░░░░░░   10.81 % 
-🌃 Evening                31 commits          █████████████████████░░░░   83.78 % 
-🌙 Night                  2 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
+🌆 Daytime                4 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.71 % 
+🌃 Evening                59 commits          █████████████████████░░░░   84.29 % 
+🌙 Night                  7 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   10.00 % 
 ```
+
 
 📊 **This Week I Spent My Time On** 
 
@@ -61,6 +58,7 @@
 💬 Programming Languages: 
 No Activity Tracked This Week
 ```
+
 
 <!--END_SECTION:waka-->
 
