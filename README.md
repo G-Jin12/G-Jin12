@@ -8,9 +8,9 @@
 <!--    Generated daily by GitHub Actions in this repo                       -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
-<p align="center">
+<p align="Left">
   <!-- 옵션 1: fork 저장소의 raw URL 직접 참조 -->
-  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/terminals/user_profile.svg" alt="..." height="400" />
+  <img src="https://raw.githubusercontent.com/G-Jin12/github-stats-terminal-style/master/terminals/user_profile.svg" alt="..." height="450" />
 </p>
 
 <br/>
