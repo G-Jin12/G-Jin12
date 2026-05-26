@@ -1,5 +1,0 @@
-{
-  "sourceType": "user",
-  "target": "G-Jin12",
-  "commands": ["whoami", "neofetch", "languages", "top-repos", "ps", "uptime", "exit"]
-}
