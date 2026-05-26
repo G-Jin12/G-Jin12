@@ -1,0 +1,42 @@
+name: Metrics — Starlists
+
+on:
+  schedule:
+    # 매일 00:00 UTC (KST 09:00)
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  starlists:
+    name: Render starlists SVG
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate starlists metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # ── 출력 파일명 ──
+          filename: metrics.plugin.starlists.svg
+
+          # ── 인증 ──
+          # PERSONAL_TOKEN 시크릿에 'public_repo' 스코프 PAT를 저장하세요
+          token: ${{ secrets.PERSONAL_TOKEN }}
+          user: G-Jin12
+
+          # ── 기본 베이스 컴포넌트는 끄고 starlists만 렌더 ──
+          base: ""
+          template: classic
+
+          # ── 핵심: starlists 플러그인 활성화 ──
+          plugin_starlists: yes
+          # 아래는 모두 default 설정이지만 명시적으로 보여드림
+          plugin_starlists_limit: 4              # default 4
+          plugin_starlists_limit_repositories: 4 # default 4
+          plugin_starlists_languages: yes        # default yes
+          plugin_starlists_shuffle_repositories: yes
