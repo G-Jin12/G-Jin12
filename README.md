@@ -42,6 +42,10 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <!--START_SECTION:waka-->
+<a href="https://github.com/DenverCoder1/readme-typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=My+Activity" alt="My Activity" />
+</a>
+
 **I'm a Night 🦉** 
 
 ```text
@@ -51,8 +55,6 @@
 🌙 Night                  2 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
 ```
 
-<br/>
-
 📊 **This Week I Spent My Time On** 
 
 ```text
@@ -60,11 +62,9 @@
 No Activity Tracked This Week
 ```
 
-
 <!--END_SECTION:waka-->
 
 <br/>
-
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 6. Metrics starlists plugin (lowlighter/metrics)                       -->
 <!--    Generated daily by metrics.yml workflow                              -->
@@ -77,8 +77,6 @@ No Activity Tracked This Week
 <p align="Left">
   <img src="./metrics.plugin.starlists.svg" alt="My Starred Lists" />
 </p>
-
-<br/>
 
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 7. Snake game from contribution grid (Platane/snk)                     -->
