@@ -82,6 +82,9 @@ No Activity Tracked This Week
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 7. Snake game from contribution grid (Platane/snk)                     -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
+<a href="https://github.com/DenverCoder1/readme-typing-svg">
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=Contributions" alt="Contributions" />
+</a>
 
 <picture>
   <source media="(prefers-color-scheme: dark)"
