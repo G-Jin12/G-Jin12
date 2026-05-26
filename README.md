@@ -20,7 +20,7 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Sans&size=20&duration=3000&pause=1000&color=#FFFFFF&center=true&vCenter=false&width=500&lines=My+TechStack" alt="My TechStack" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=20&duration=3000&pause=1000&color=#FFFFFF&center=true&vCenter=false&width=500&lines=My+TechStack" alt="My TechStack" />
 </a>
 
 <br/>
@@ -74,7 +74,7 @@ No Activity Tracked This Week
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
-<img src="https://readme-typing-svg.demolab.com?font=Noto+Sans&size=20&duration=3000&pause=1000&color=#FFFFFF&center=true&vCenter=false&width=500&lines=My+TechStack" alt="💫 My Stars" />
+<img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=20&duration=3000&pause=1000&color=#FFFFFF&center=true&vCenter=false&width=500&lines=💫+My+Stars" alt="💫 My Stars" />
 </a>
 
 <p align="Left">
