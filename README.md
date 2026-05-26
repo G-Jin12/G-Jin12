@@ -51,6 +51,7 @@
 🌙 Night                  2 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
 ```
 
+<br/>
 
 📊 **This Week I Spent My Time On** 
 
@@ -85,7 +86,6 @@ No Activity Tracked This Week
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
 <img src="https://readme-typing-svg.demolab.com?font=Nato+Sans&size=15&duration=3000&pause=1000&color=FFFFFF&width=300&lines=Contributions" alt="Contributions" />
 </a>
-
 <picture>
   <source media="(prefers-color-scheme: dark)"
           srcset="https://raw.githubusercontent.com/G-Jin12/G-Jin12/output/github-contribution-grid-snake-dark.svg" />
