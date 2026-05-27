@@ -34,8 +34,6 @@
   <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
   <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
 </p>
-<br/>
-
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 4 & 5. Waka-readme-stats block (anmol098/waka-readme-stats)            -->
 <!--    Renders "I'm an early 🐤" (SHOW_COMMIT) + SHOW_LANGUAGE              -->
