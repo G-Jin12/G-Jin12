@@ -22,7 +22,7 @@
 <a href="https://github.com/DenverCoder1/readme-typing-svg">
 <img src="https://readme-typing-svg.demolab.com?font=Plus+Jakarta+Sans&size=22&duration=3000&pause=1000&color=FFFFFF&width=400&lines=%F0%9F%93%9A+My+Activity" alt="My Activity" />
 </a>
-<p align="left"><b size=10>My TechStack</b> 💻 </p>
+<p align="left"><b size=8>My TechStack</b>  💻 </p>
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 3. Tech-stack icons (qkrdmstlr3/techstack-generator)                    -->
 <!--    Order: Python → C++ → Java → docker → github                        -->
