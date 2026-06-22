@@ -44,12 +44,23 @@
 **I'm a Night 🦉** 
 
 ```text
-🌞 Morning                13 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.03 % 
-🌆 Daytime                43 commits          ███████░░░░░░░░░░░░░░░░░░   29.86 % 
-🌃 Evening                67 commits          ████████████░░░░░░░░░░░░░   46.53 % 
-🌙 Night                  21 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.58 % 
+🌞 Morning                14 commits          ██░░░░░░░░░░░░░░░░░░░░░░░   09.66 % 
+🌆 Daytime                43 commits          ███████░░░░░░░░░░░░░░░░░░   29.66 % 
+🌃 Evening                67 commits          ████████████░░░░░░░░░░░░░   46.21 % 
+🌙 Night                  21 commits          ████░░░░░░░░░░░░░░░░░░░░░   14.48 % 
 ```
 
+
+📊 **This Week I Spent My Time On** 
+
+```text
+💬 Programming Languages: 
+Python                   7 hrs 58 mins       █████████░░░░░░░░░░░░░░░░   37.00 % 
+Bash                     4 hrs 36 mins       █████░░░░░░░░░░░░░░░░░░░░   21.37 % 
+Text                     4 hrs 35 mins       █████░░░░░░░░░░░░░░░░░░░░   21.34 % 
+Markdown                 2 hrs 42 mins       ███░░░░░░░░░░░░░░░░░░░░░░   12.58 % 
+TSV                      51 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.95 % 
+```
 
 
 <!--END_SECTION:waka-->
