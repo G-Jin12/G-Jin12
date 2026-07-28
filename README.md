@@ -41,15 +41,13 @@
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
 <!--START_SECTION:waka-->
-![AI Code Time](http://img.shields.io/badge/AI%20Code%20Time-83%20hrs%2035%20mins-blue?style=flat)
-
 **I'm a Night 🦉** 
 
 ```text
-🌞 Morning                4 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.41 % 
-🌆 Daytime                7 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   09.46 % 
-🌃 Evening                58 commits          ████████████████████░░░░░   78.38 % 
-🌙 Night                  5 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   06.76 % 
+🌞 Morning                4 commits           █░░░░░░░░░░░░░░░░░░░░░░░░   05.33 % 
+🌆 Daytime                8 commits           ███░░░░░░░░░░░░░░░░░░░░░░   10.67 % 
+🌃 Evening                58 commits          ███████████████████░░░░░░   77.33 % 
+🌙 Night                  5 commits           ██░░░░░░░░░░░░░░░░░░░░░░░   06.67 % 
 ```
 
 
@@ -62,29 +60,6 @@ Markdown                 2 hrs 33 mins       ████████░░░�
 Other                    1 hr 24 mins        █████░░░░░░░░░░░░░░░░░░░░   18.50 % 
 Text                     21 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   04.62 % 
 Git Config               16 mins             █░░░░░░░░░░░░░░░░░░░░░░░░   03.60 % 
-```
-
-🤖 **AI Coding This Week** 
-
-```text
-⏱ AI Coding Time: 7 hrs 22 mins (96.47%)
-
-✍️ 2,003 lines written by AI, 5 lines written by hand (99.75% AI-written)
-
-🔤 79,744,802 Input Tokens, 439,363 Output Tokens
-
-💵 $410.84 Estimated AI Cost This Week
-
-🧠 9 AI Sessions, 90 AI Prompts
-
-Opus                     2,005 lines         █████████████████████████   100.00 % 
-Composer                 0 lines             ░░░░░░░░░░░░░░░░░░░░░░░░░   00.00 % 
-
-🔎 AI Coding Insights:
-🤖 AI-Driven — 99.75% of written lines came from AI
-📝 Concise Prompter — average 238 characters per prompt
-🔁 Iterative Prompter — average 10 prompts per session
-🚀 High AI Trust — 0.25% of changed lines were hand-edited
 ```
 
 
