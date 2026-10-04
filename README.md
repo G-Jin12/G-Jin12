@@ -55,9 +55,9 @@
 
 ```text
 💬 Programming Languages: 
-Other                    3 hrs 14 mins       ███████████████░░░░░░░░░░   60.65 % 
-Markdown                 1 hr 56 mins        █████████░░░░░░░░░░░░░░░░   36.24 % 
-Git Config               9 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   03.11 % 
+Other                    4 hrs 6 mins        █████████████████░░░░░░░░   66.20 % 
+Markdown                 1 hr 56 mins        ████████░░░░░░░░░░░░░░░░░   31.13 % 
+Git Config               9 mins              █░░░░░░░░░░░░░░░░░░░░░░░░   02.67 % 
 ```
 
 
