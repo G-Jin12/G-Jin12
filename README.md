@@ -27,12 +27,12 @@
 <!-- 3. Tech-stack icons (qkrdmstlr3/techstack-generator)                    -->
 <!--    Order: Python → C++ → Java → docker → github                        -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
-<p align="Left">
-  <img src="https://techstack-generator.vercel.app/python-icon.svg" alt="Python" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/cpp-icon.svg" alt="C++" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/java-icon.svg" alt="Java" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="65" height="65" />
-  <img src="https://techstack-generator.vercel.app/github-icon.svg" alt="GitHub" width="65" height="65" />
+<p align="left">
+  <img src="https://raw.githubusercontent.com/qkrdmstlr3/techstack-generator/master/static/python-icon.svg" alt="Python" width="65" height="65" />
+  <img src="https://raw.githubusercontent.com/qkrdmstlr3/techstack-generator/master/static/cpp-icon.svg" alt="C++" width="65" height="65" />
+  <img src="https://raw.githubusercontent.com/qkrdmstlr3/techstack-generator/master/static/java-icon.svg" alt="Java" width="65" height="65" />
+  <img src="https://raw.githubusercontent.com/qkrdmstlr3/techstack-generator/master/static/docker-icon.svg" alt="Docker" width="65" height="65" />
+  <img src="https://raw.githubusercontent.com/qkrdmstlr3/techstack-generator/master/static/github-icon.svg" alt="GitHub" width="65" height="65" />
 </p>
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 <!-- 4 & 5. Waka-readme-stats block (anmol098/waka-readme-stats)            -->
