@@ -40,6 +40,17 @@
 <!--    These two appear side-by-side because waka outputs them together    -->
 <!-- ─────────────────────────────────────────────────────────────────────── -->
 
+<!--START_SECTION:commit-time-->
+**I'm an Early 🐤**
+
+```text
+🌞 Morning     50 commits  ███░░░░░░░░░░░░░░░░░░░░░░  12.79 %
+🌆 Daytime    200 commits  █████████████░░░░░░░░░░░░  51.15 %
+🌃 Evening     98 commits  ██████░░░░░░░░░░░░░░░░░░░  25.06 %
+🌙 Night       43 commits  ███░░░░░░░░░░░░░░░░░░░░░░  11.00 %
+```
+<!--END_SECTION:commit-time-->
+
 <!--START_SECTION:waka-->
 📊 **This Week I Spent My Time On** 
 
