@@ -1,73 +1,35 @@
+
 name: Waka Readme
 
 on:
   schedule:
-    # 매일 18:30 UTC (KST 03:30 다음날)에 실행
+    # 매일 KST 03:30 실행
     - cron: '30 18 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: waka-readme
+  cancel-in-progress: false
 
 jobs:
   update-readme:
     name: Update README with Dev Metrics
     runs-on: ubuntu-latest
+
     steps:
-      
-      - name: Check WakaTime API freshness
-        env:
-          WAKATIME_TOKEN: ${{ secrets.WAKATIME_API_KEY }}
-        run: |
-          python3 - <<'PY'
-          import os
-          import json
-          import urllib.request
-          import urllib.error
-
-          url = (
-              "https://wakatime.com/api/v1/"
-              "users/current/stats/last_7_days"
-          )
-          req = urllib.request.Request(
-              url,
-              headers={
-                  "Authorization":
-                      "Bearer " + os.environ["WAKATIME_TOKEN"]
-              }
-          )
-
-          try:
-              with urllib.request.urlopen(req, timeout=30) as res:
-                  print("HTTP:", res.status)
-                  data = json.load(res)["data"]
-
-              for key in [
-                  "is_up_to_date",
-                  "is_including_today",
-                  "start",
-                  "end",
-                  "modified_at",
-                  "percent_calculated",
-                  "timezone",
-              ]:
-                  print(key, ":", data.get(key))
-
-              print("Languages:")
-              for lang in data.get("languages", []):
-                  print(lang.get("name"), lang.get("text"))
-
-          except urllib.error.HTTPError as e:
-              print("HTTP error:", e.code)
-              raise SystemExit(1)
-          except Exception as e:
-              print("Request error:", type(e).__name__)
-              raise SystemExit(1)
-          PY
-
-      - uses: anmol098/waka-readme-stats@master
+      # 1. WakaTime 주간 언어별 사용량 업데이트
+      - name: Update WakaTime language stats
+        uses: anmol098/waka-readme-stats@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          SHOW_COMMIT: "True"
+
+          SHOW_COMMIT: "False"
           SHOW_LANGUAGE: "True"
+
           SHOW_AI_CODE_TIME: "False"
           SHOW_AI_CODING: "False"
           SHOW_DAYS_OF_WEEK: "False"
@@ -82,3 +44,211 @@ jobs:
           SHOW_PROFILE_VIEWS: "False"
           SHOW_TOTAL_CODE_TIME: "False"
           SHOW_UPDATED_DATE: "False"
+
+          DEBUG_LOGGING: "True"
+
+      # 2. WakaTime 업데이트 이후 최신 README 가져오기
+      - name: Checkout latest README
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      # 3. neofetch 기준 커밋 시간대 분석
+      - name: Update GitHub commit time stats
+        env:
+          STATS_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
+          python3 - <<'PY'
+          import json
+          import os
+          from datetime import datetime
+          from pathlib import Path
+          from urllib.parse import urlencode
+          from urllib.request import Request, urlopen
+          from zoneinfo import ZoneInfo
+
+          USERNAME = "G-Jin12"
+          TIMEZONE = ZoneInfo("Asia/Seoul")
+          TOKEN = os.environ["STATS_TOKEN"]
+
+          START = "<!--START_SECTION:commit-time-->"
+          END = "<!--END_SECTION:commit-time-->"
+          WAKA_MARKER = "<!--START_SECTION:waka-->"
+
+          def fetch_commits(page):
+              params = urlencode({
+                  "q": f"author:{USERNAME}",
+                  "per_page": 100,
+                  "page": page,
+              })
+
+              url = (
+                  "https://api.github.com/search/commits?"
+                  + params
+              )
+
+              req = Request(
+                  url,
+                  headers={
+                      "Authorization": f"Bearer {TOKEN}",
+                      "Accept": "application/vnd.github+json",
+                  },
+              )
+
+              with urlopen(req, timeout=60) as res:
+                  return json.load(res)
+
+          # GitHub Search API 결과 수집
+          first = fetch_commits(1)
+          total = first["total_count"]
+
+          if first.get("incomplete_results"):
+              raise RuntimeError("Incomplete GitHub search")
+
+          if total > 1000:
+              raise RuntimeError(
+                  "Over 1000 commits: date partitioning required"
+              )
+
+          commits = first["items"]
+
+          for page in range(2, (total + 99) // 100 + 1):
+              result = fetch_commits(page)
+
+              if result.get("incomplete_results"):
+                  raise RuntimeError("Incomplete search page")
+
+              commits.extend(result["items"])
+
+          if len(commits) != total:
+              raise RuntimeError(
+                  f"Commit count mismatch: {len(commits)} != {total}"
+              )
+
+          # 한국시간 기준 시간대별 집계
+          counts = {
+              "Morning": 0,
+              "Daytime": 0,
+              "Evening": 0,
+              "Night": 0,
+          }
+
+          for item in commits:
+              info = item["commit"]
+              person = (
+                  info.get("committer")
+                  or info.get("author")
+              )
+
+              dt = datetime.fromisoformat(
+                  person["date"].replace("Z", "+00:00")
+              ).astimezone(TIMEZONE)
+
+              hour = dt.hour
+
+              if 6 <= hour < 12:
+                  counts["Morning"] += 1
+              elif 12 <= hour < 18:
+                  counts["Daytime"] += 1
+              elif 18 <= hour < 24:
+                  counts["Evening"] += 1
+              else:
+                  counts["Night"] += 1
+
+          # README 출력 형식 생성
+          day_count = (
+              counts["Morning"] + counts["Daytime"]
+          )
+          night_count = (
+              counts["Evening"] + counts["Night"]
+          )
+
+          title = (
+              "**I'm a Night 🦉**"
+              if night_count > day_count
+              else "**I'm an Early 🐤**"
+          )
+
+          lines = [title, "", "```text"]
+
+          categories = [
+              ("🌞", "Morning"),
+              ("🌆", "Daytime"),
+              ("🌃", "Evening"),
+              ("🌙", "Night"),
+          ]
+
+          for emoji, name in categories:
+              count = counts[name]
+              percent = (
+                  count / total * 100 if total else 0
+              )
+
+              filled = min(25, round(percent / 4))
+              bar = "█" * filled + "░" * (25 - filled)
+
+              lines.append(
+                  f"{emoji} {name:<9} "
+                  f"{count:>4} commits  "
+                  f"{bar}  {percent:05.2f} %"
+              )
+
+          lines.append("```")
+
+          section = (
+              START + "\n"
+              + "\n".join(lines)
+              + "\n" + END
+          )
+
+          # README에서 별도 commit-time 영역 관리
+          readme_path = Path("README.md")
+          readme = readme_path.read_text(
+              encoding="utf-8"
+          )
+
+          if START in readme and END in readme:
+              before = readme.split(START, 1)[0]
+              after = readme.split(END, 1)[1]
+              updated = before + section + after
+
+          elif START not in readme and END not in readme:
+              if WAKA_MARKER not in readme:
+                  raise RuntimeError(
+                      "WakaTime section not found"
+                  )
+
+              updated = readme.replace(
+                  WAKA_MARKER,
+                  section + "\n\n" + WAKA_MARKER,
+                  1,
+              )
+
+          else:
+              raise RuntimeError(
+                  "Incomplete commit-time markers"
+              )
+
+          if updated != readme:
+              readme_path.write_text(
+                  updated, encoding="utf-8"
+              )
+
+          print("GitHub Search total:", total)
+          print("Time-of-day counts:", counts)
+          print("README updated:", updated != readme)
+          PY
+
+          # 4. 변경 내용이 있을 때만 커밋
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Update commit time stats"
+            git push origin HEAD:main
+          fi
